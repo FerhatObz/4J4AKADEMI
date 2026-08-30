@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: './', // Ensures assets resolve properly on GitHub Pages or any sub-path
+  base: '/4J4AKADEMI/',
   server: {
     port: 5173,
     open: false,

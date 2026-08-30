@@ -7,6 +7,15 @@ interface BookCoverProps {
   isHovered?: boolean;
 }
 
+const getCoverSrc = (path: string) => {
+  if (path.startsWith('http://') || path.startsWith('https://')) return path;
+  const cleanPath = path.startsWith('/') ? path.slice(1) : path;
+  const base = import.meta.env.BASE_URL.endsWith('/')
+    ? import.meta.env.BASE_URL
+    : `${import.meta.env.BASE_URL}/`;
+  return `${base}${cleanPath}`;
+};
+
 export const BookCover: React.FC<BookCoverProps> = ({ book }) => {
   const [imageLoaded, setImageLoaded] = useState(false);
   const [imageError, setImageError] = useState(false);
@@ -70,7 +79,7 @@ export const BookCover: React.FC<BookCoverProps> = ({ book }) => {
         <div className="book-cover-front">
           {!imageError ? (
             <img
-              src={book.cover}
+              src={getCoverSrc(book.cover)}
               alt={`${book.title} kitap kapağı`}
               className={`book-cover-image ${imageLoaded ? 'is-loaded' : 'is-loading'}`}
               loading="lazy"
