@@ -1,0 +1,102 @@
+/* ==========================================================================
+   4JAVA4 AKADEMİ — TYPOGRAPHY SYSTEM
+   Editorial Scale, Fluid Clamp Scales, High Contrast Hierarchy
+   ========================================================================== */
+
+/* --- Base Body Typography --- */
+body {
+  font-family: var(--font-body);
+  font-size: clamp(0.9375rem, 0.9rem + 0.25vw, 1.0625rem);
+  font-weight: 400;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+}
+
+/* --- Display & Section Headlines --- */
+h1, h2, h3, h4, h5, h6,
+.display-title,
+.display-sub {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 0.95;
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+}
+
+/* Fluid Massive Display Headline */
+.display-headline {
+  font-family: var(--font-display);
+  font-size: clamp(2.75rem, 8.5vw, 7.5rem);
+  font-weight: 700;
+  line-height: 0.92;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+}
+
+.display-subline {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 5vw, 4.25rem);
+  font-weight: 600;
+  line-height: 1.0;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+}
+
+/* --- Editorial Subtitle / Philosophy Quote --- */
+.editorial-quote {
+  font-family: var(--font-body);
+  font-size: clamp(1.125rem, 1.5vw + 0.5rem, 1.625rem);
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: -0.015em;
+  color: var(--text-primary);
+  max-width: 38ch;
+}
+
+.editorial-quote em {
+  font-style: normal;
+  color: var(--accent-primary);
+}
+
+/* --- Technical & Metadata Typography (Mono) --- */
+.mono-label,
+.tech-meta,
+.tech-code,
+.sys-badge {
+  font-family: var(--font-mono);
+  font-size: clamp(0.7rem, 0.65rem + 0.2vw, 0.8125rem);
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.mono-label--accent {
+  color: var(--accent-primary);
+}
+
+.mono-num {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* --- Paragraphs & Descriptions --- */
+p {
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+p.lead {
+  font-size: clamp(1rem, 1.2vw, 1.25rem);
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+/* --- Selection Color --- */
+::selection {
+  background-color: var(--accent-primary);
+  color: #08090A;
+}

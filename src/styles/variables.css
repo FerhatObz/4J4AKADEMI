@@ -1,0 +1,61 @@
+/* ==========================================================================
+   4JAVA4 AKADEMİ — DESIGN SYSTEM TOKENS & VARIABLES
+   Editorial Technology + Cyber Culture + Digital Book Gallery
+   ========================================================================== */
+
+:root {
+  /* --- Primary Color Palette --- */
+  --bg-primary: #08090A;
+  --bg-surface: #0E1013;
+  --bg-surface-elevated: #14171C;
+  --bg-surface-subtle: rgba(242, 242, 238, 0.02);
+
+  /* --- Text & Content --- */
+  --text-primary: #F4F4F0;
+  --text-secondary: #C8CDD0;
+  --text-muted: #8E9398;
+  --text-dim: #4D5358;
+  --text-inverse: #08090A;
+
+  /* --- Accent System --- */
+  --accent-primary: #B7FF00;          /* Acid lime */
+  --accent-primary-dim: rgba(183, 255, 0, 0.12);
+  --accent-primary-glow: rgba(183, 255, 0, 0.35);
+  --accent-secondary: #FF3B30;        /* Signal red */
+  --accent-secondary-dim: rgba(255, 59, 48, 0.15);
+
+  /* --- Per-Path Dynamic Accent (Default Lime) --- */
+  --path-accent: #B7FF00;
+  --path-accent-dim: rgba(183, 255, 0, 0.12);
+  --path-accent-glow: rgba(183, 255, 0, 0.25);
+
+  /* --- Borders & Structural Lines --- */
+  --border-subtle: rgba(242, 242, 238, 0.07);
+  --border-medium: rgba(242, 242, 238, 0.14);
+  --border-strong: rgba(242, 242, 238, 0.28);
+  --border-accent: rgba(183, 255, 0, 0.4);
+  --grid-line: rgba(242, 242, 238, 0.03);
+
+  /* --- Premium Typography Stacks --- */
+  --font-display: 'Syne', 'Space Grotesk', -apple-system, sans-serif;
+  --font-heading: 'Space Grotesk', 'Plus Jakarta Sans', sans-serif;
+  --font-body: 'Plus Jakarta Sans', 'IBM Plex Sans', -apple-system, sans-serif;
+  --font-code: 'JetBrains Mono', 'IBM Plex Mono', Consolas, monospace;
+  --font-mono: 'JetBrains Mono', 'IBM Plex Mono', Consolas, monospace;
+
+  /* --- Layout & Spacing --- */
+  --container-max-width: 1440px;
+  --container-padding: clamp(1.25rem, 4vw, 4.5rem);
+  --header-height: 72px;
+
+  /* --- Easing & Timing --- */
+  --ease-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-quart: cubic-bezier(0.25, 1, 0.5, 1);
+  --transition-fast: 150ms ease;
+  --transition-normal: 280ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: 500ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* --- Dynamic Parallax Pointer Defaults --- */
+  --mouse-x: 0;
+  --mouse-y: 0;
+}

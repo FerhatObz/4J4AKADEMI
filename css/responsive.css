@@ -1,0 +1,116 @@
+/* ==========================================================================
+   4JAVA4 AKADEMİ — RESPONSIVE REFINEMENTS
+   Mobile-First Overrides & Fluid Breakpoint Transitions
+   ========================================================================== */
+
+/* --- Tablet / Medium Devices (<= 1024px) --- */
+@media (max-width: 1024px) {
+  .welcome-sub-block {
+    grid-template-columns: 1fr;
+    row-gap: 2.5rem;
+  }
+
+  .welcome-quote-wrapper {
+    grid-column: 1 / -1;
+  }
+
+  .welcome-action-wrapper {
+    grid-column: 1 / -1;
+    align-items: flex-start;
+  }
+}
+
+/* --- Mobile Viewport (<= 768px) --- */
+@media (max-width: 768px) {
+  :root {
+    --header-height: 64px;
+    --container-padding: 1.25rem;
+  }
+
+  .site-header {
+    height: var(--header-height);
+  }
+
+  .brand-logo {
+    font-size: 1.125rem;
+  }
+
+  .brand-tag {
+    font-size: 0.625rem;
+  }
+
+  .section-welcome {
+    padding-top: calc(var(--header-height) + 1.75rem);
+    padding-bottom: 2rem;
+    min-height: calc(100vh - 20px);
+  }
+
+  .welcome-content {
+    gap: 2.25rem;
+  }
+
+  .display-headline {
+    font-size: clamp(2.5rem, 11.5vw, 4.5rem);
+    line-height: 0.94;
+  }
+
+  .display-subline {
+    font-size: clamp(1.5rem, 7vw, 2.5rem);
+    line-height: 1.05;
+  }
+
+  .editorial-quote {
+    font-size: 1.0625rem;
+    line-height: 1.45;
+  }
+
+  .action-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .cta-primary,
+  .cta-secondary {
+    width: 100%;
+    justify-content: center;
+    padding-block: 1rem;
+  }
+
+  .welcome-footer-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .coordinate-tracker {
+    display: none;
+  }
+}
+
+/* --- Small Mobile Viewport (<= 480px) down to 320px --- */
+@media (max-width: 480px) {
+  :root {
+    --container-padding: 1rem;
+  }
+
+  .editorial-badge {
+    font-size: 0.6875rem;
+    padding: 0.25rem 0.6rem;
+  }
+
+  .display-headline {
+    font-size: clamp(2.25rem, 12vw, 3rem);
+  }
+
+  .display-subline {
+    font-size: clamp(1.35rem, 7.5vw, 1.85rem);
+  }
+
+  .editorial-quote {
+    font-size: 1rem;
+  }
+
+  .meta-item {
+    font-size: 0.6875rem;
+  }
+}
